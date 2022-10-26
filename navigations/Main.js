@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator(); // criando pilhas de navegação
 const Main = () => {
     return (
         //<NavigationContainer> posso tirar esse container pq ele já foi inserido e importado em App.js
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="Home">
             <Stack.Screen
                 name="Home"
                 component={Home}
@@ -31,3 +31,4 @@ const Main = () => {
 }
 
 export default Main;
+
